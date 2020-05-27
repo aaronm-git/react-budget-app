@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Container>
+      <Row>
+        <Col>1 of 1</Col>
+        <Col>1 of 1</Col>
+        <Col>1 of 1</Col>
+      </Row>
+    </Container>
   );
 }
 
