@@ -40,7 +40,13 @@ class App extends Component {
               ) : (
                 <>
                   {menu}
-                  {window.location.pathname.includes("/auth/signin-1") || window.location.pathname.includes( "/auth/signup-1")? null:<Redirect to="/auth/signin-1" />}
+                  {window.location.pathname.includes("/auth/signin-1") ||
+                  window.location.pathname.includes("/auth/signup-1") ||
+                  window.location.pathname.includes(
+                    "/auth/reset-password-1"
+                  ) ? null : (
+                    <Redirect to="/auth/signin-1" />
+                  )}
                 </>
               )}
             </Switch>
